@@ -2,15 +2,35 @@
 {
     private static void Main(string[] args)
     {
-        int primerNumero, segundoNumero, suma;
-        Console.Write("Introduce el primer numero: ");
+        int primerNumero, segundoNumero;
+
+        Console.WriteLine("Ingrese el primer numero: ");
         primerNumero = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("Introduce el segundo numero: ");
+        Console.WriteLine("Ingrese el segundo numero: ");
         segundoNumero = Convert.ToInt32(Console.ReadLine());
 
-        suma = primerNumero + segundoNumero;
+        CalculosMatematicos op = new CalculosMatematicos(primerNumero, segundoNumero);
 
-        Console.WriteLine("La suma de {0} y {1} es {2}", primerNumero, segundoNumero, segundoNumero, suma);
+        Console.WriteLine("El resultado de la operacion es: " + op.Calcular());
+    }
+
+    public class CalculosMatematicos
+    {
+        private int n1;
+        private int n2;
+        private int n3;
+
+        public CalculosMatematicos(int N1, int N2)
+        {
+            n1 = N1;
+            n2 = N2;
+        }
+
+        public int Calcular()
+        {
+            n3 = (n1 + n2) * (n1 - n2);
+            return n3;
+        }
     }
 }
