@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Lab46
+namespace Laboratorio41
 {
     class Program
     {
