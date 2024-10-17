@@ -1,6 +1,6 @@
 ﻿namespace Laboratorio14
 {
-    partial class Form1
+    partial class frmProductos
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,149 +28,246 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            label1 = new Label();
-            textBox1 = new TextBox();
-            label2 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            label3 = new Label();
-            label4 = new Label();
-            textBox4 = new TextBox();
-            button1 = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductos));
+            lbl_Id = new Label();
+            txtId = new TextBox();
+            lbl_Nombre = new Label();
+            txtNombre = new TextBox();
+            txtPrecio = new TextBox();
+            lbl_Precio = new Label();
+            lbl_Stock = new Label();
+            txtStock = new TextBox();
+            btnSalir = new Button();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            tsbNuevo = new PictureBox();
+            tsbGuardar = new PictureBox();
+            tsbCancelar = new PictureBox();
+            tsbEliminar = new PictureBox();
+            label5 = new Label();
+            tstId = new TextBox();
+            tsbBuscar = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tsbNuevo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tsbGuardar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tsbCancelar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tsbEliminar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tsbBuscar).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lbl_Id
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(82, 52);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            lbl_Id.AutoSize = true;
+            lbl_Id.Location = new Point(25, 67);
+            lbl_Id.Name = "lbl_Id";
+            lbl_Id.Size = new Size(17, 15);
+            lbl_Id.TabIndex = 0;
+            lbl_Id.Text = "Id";
             // 
-            // textBox1
+            // txtId
             // 
-            textBox1.Location = new Point(57, 84);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 1;
+            txtId.Location = new Point(25, 88);
+            txtId.Margin = new Padding(3, 2, 3, 2);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(110, 23);
+            txtId.TabIndex = 1;
             // 
-            // label2
+            // lbl_Nombre
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(359, 43);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 2;
-            label2.Text = "label2";
+            lbl_Nombre.AutoSize = true;
+            lbl_Nombre.Location = new Point(189, 67);
+            lbl_Nombre.Name = "lbl_Nombre";
+            lbl_Nombre.Size = new Size(51, 15);
+            lbl_Nombre.TabIndex = 2;
+            lbl_Nombre.Text = "Nombre";
             // 
-            // textBox2
+            // txtNombre
             // 
-            textBox2.Location = new Point(364, 89);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 3;
+            txtNombre.Location = new Point(189, 88);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(332, 23);
+            txtNombre.TabIndex = 3;
             // 
-            // textBox3
+            // txtPrecio
             // 
-            textBox3.Location = new Point(50, 231);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 4;
+            txtPrecio.Location = new Point(25, 157);
+            txtPrecio.Margin = new Padding(3, 2, 3, 2);
+            txtPrecio.Name = "txtPrecio";
+            txtPrecio.Size = new Size(110, 23);
+            txtPrecio.TabIndex = 4;
             // 
-            // label3
+            // lbl_Precio
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(82, 192);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 5;
-            label3.Text = "label3";
+            lbl_Precio.AutoSize = true;
+            lbl_Precio.Location = new Point(25, 129);
+            lbl_Precio.Name = "lbl_Precio";
+            lbl_Precio.Size = new Size(40, 15);
+            lbl_Precio.TabIndex = 5;
+            lbl_Precio.Text = "Precio";
             // 
-            // label4
+            // lbl_Stock
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(387, 172);
-            label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 6;
-            label4.Text = "label4";
+            lbl_Stock.AutoSize = true;
+            lbl_Stock.Location = new Point(189, 129);
+            lbl_Stock.Name = "lbl_Stock";
+            lbl_Stock.Size = new Size(36, 15);
+            lbl_Stock.TabIndex = 6;
+            lbl_Stock.Text = "Stock";
             // 
-            // textBox4
+            // txtStock
             // 
-            textBox4.Location = new Point(399, 224);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 7;
+            txtStock.Location = new Point(189, 157);
+            txtStock.Margin = new Padding(3, 2, 3, 2);
+            txtStock.Name = "txtStock";
+            txtStock.Size = new Size(110, 23);
+            txtStock.TabIndex = 7;
             // 
-            // button1
+            // btnSalir
             // 
-            button1.Location = new Point(99, 340);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 8;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnSalir.Location = new Point(25, 259);
+            btnSalir.Margin = new Padding(3, 2, 3, 2);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(82, 22);
+            btnSalir.TabIndex = 8;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(177, 117);
+            pictureBox1.Location = new Point(155, 88);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(0, 0);
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // tsbNuevo
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(117, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(65, 66);
-            pictureBox2.TabIndex = 10;
-            pictureBox2.TabStop = false;
+            tsbNuevo.Image = (Image)resources.GetObject("tsbNuevo.Image");
+            tsbNuevo.Location = new Point(0, -1);
+            tsbNuevo.Margin = new Padding(3, 2, 3, 2);
+            tsbNuevo.Name = "tsbNuevo";
+            tsbNuevo.Size = new Size(28, 15);
+            tsbNuevo.SizeMode = PictureBoxSizeMode.Zoom;
+            tsbNuevo.TabIndex = 10;
+            tsbNuevo.TabStop = false;
+            tsbNuevo.Click += tsbNuevo_Click;
             // 
-            // Form1
+            // tsbGuardar
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            tsbGuardar.Image = (Image)resources.GetObject("tsbGuardar.Image");
+            tsbGuardar.Location = new Point(25, -1);
+            tsbGuardar.Name = "tsbGuardar";
+            tsbGuardar.Size = new Size(30, 15);
+            tsbGuardar.SizeMode = PictureBoxSizeMode.Zoom;
+            tsbGuardar.TabIndex = 11;
+            tsbGuardar.TabStop = false;
+            tsbGuardar.Click += tsbGuardar_Click;
+            // 
+            // tsbCancelar
+            // 
+            tsbCancelar.Image = (Image)resources.GetObject("tsbCancelar.Image");
+            tsbCancelar.Location = new Point(50, -1);
+            tsbCancelar.Name = "tsbCancelar";
+            tsbCancelar.Size = new Size(26, 15);
+            tsbCancelar.SizeMode = PictureBoxSizeMode.Zoom;
+            tsbCancelar.TabIndex = 12;
+            tsbCancelar.TabStop = false;
+            tsbCancelar.Click += tsbCancelar_Click;
+            // 
+            // tsbEliminar
+            // 
+            tsbEliminar.Image = (Image)resources.GetObject("tsbEliminar.Image");
+            tsbEliminar.Location = new Point(72, -1);
+            tsbEliminar.Name = "tsbEliminar";
+            tsbEliminar.Size = new Size(26, 15);
+            tsbEliminar.SizeMode = PictureBoxSizeMode.Zoom;
+            tsbEliminar.TabIndex = 13;
+            tsbEliminar.TabStop = false;
+            tsbEliminar.Click += tsbEliminar_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(104, 2);
+            label5.Name = "label5";
+            label5.Size = new Size(79, 15);
+            label5.TabIndex = 14;
+            label5.Text = "Buscar por id:";
+            // 
+            // tstId
+            // 
+            tstId.Location = new Point(189, -1);
+            tstId.Name = "tstId";
+            tstId.Size = new Size(100, 23);
+            tstId.TabIndex = 15;
+            // 
+            // tsbBuscar
+            // 
+            tsbBuscar.Image = (Image)resources.GetObject("tsbBuscar.Image");
+            tsbBuscar.Location = new Point(286, -1);
+            tsbBuscar.Name = "tsbBuscar";
+            tsbBuscar.Size = new Size(24, 18);
+            tsbBuscar.SizeMode = PictureBoxSizeMode.Zoom;
+            tsbBuscar.TabIndex = 16;
+            tsbBuscar.TabStop = false;
+            tsbBuscar.Click += tsbBuscar_Click;
+            // 
+            // frmProductos
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox2);
+            ClientSize = new Size(700, 338);
+            Controls.Add(tsbBuscar);
+            Controls.Add(tstId);
+            Controls.Add(label5);
+            Controls.Add(tsbEliminar);
+            Controls.Add(tsbCancelar);
+            Controls.Add(tsbGuardar);
+            Controls.Add(tsbNuevo);
             Controls.Add(pictureBox1);
-            Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(btnSalir);
+            Controls.Add(txtStock);
+            Controls.Add(lbl_Stock);
+            Controls.Add(lbl_Precio);
+            Controls.Add(txtPrecio);
+            Controls.Add(txtNombre);
+            Controls.Add(lbl_Nombre);
+            Controls.Add(txtId);
+            Controls.Add(lbl_Id);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "frmProductos";
+            Text = "Productos";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tsbNuevo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tsbGuardar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tsbCancelar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tsbEliminar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tsbBuscar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private TextBox textBox1;
-        private Label label2;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private Label label3;
-        private Label label4;
-        private TextBox textBox4;
-        private Button button1;
+        private Label lbl_Id;
+        private TextBox txtId;
+        private Label lbl_Nombre;
+        private TextBox txtNombre;
+        private TextBox txtPrecio;
+        private Label lbl_Precio;
+        private Label lbl_Stock;
+        private TextBox txtStock;
+        private Button btnSalir;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private PictureBox tsbNuevo;
+        private PictureBox tsbGuardar;
+        private PictureBox tsbCancelar;
+        private PictureBox tsbEliminar;
+        private Label label5;
+        private TextBox tstId;
+        private PictureBox tsbBuscar;
     }
 }
