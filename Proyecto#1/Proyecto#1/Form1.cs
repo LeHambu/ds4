@@ -220,6 +220,7 @@ namespace Proyecto_1
             }
         }
 
+
         private void btnMostrarCalculos_Click_1(object sender, EventArgs e)
         {
             listBoxCalculos.Items.Clear();
