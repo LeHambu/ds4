@@ -97,6 +97,7 @@ namespace Proyecto_1
             txtResultado.Text += boton.Text;
         }
 
+
         private void btn5_Click(object sender, EventArgs e)
         {
             Button boton = (Button)sender;
