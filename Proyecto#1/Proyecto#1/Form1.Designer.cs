@@ -51,6 +51,7 @@
             btnRaizCuadrada = new Button();
             txtResultado = new TextBox();
             btnMostrarCalculos = new Button();
+            listBoxCalculos = new ListBox();
             SuspendLayout();
             // 
             // btnClearEntry
@@ -298,12 +299,23 @@
             btnMostrarCalculos.TabIndex = 22;
             btnMostrarCalculos.Text = "Mostrar Calculos";
             btnMostrarCalculos.UseVisualStyleBackColor = true;
+            btnMostrarCalculos.Click += btnMostrarCalculos_Click_1;
+            // 
+            // listBoxCalculos
+            // 
+            listBoxCalculos.FormattingEnabled = true;
+            listBoxCalculos.ItemHeight = 15;
+            listBoxCalculos.Location = new Point(470, 98);
+            listBoxCalculos.Name = "listBoxCalculos";
+            listBoxCalculos.Size = new Size(320, 484);
+            listBoxCalculos.TabIndex = 23;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(499, 609);
+            ClientSize = new Size(802, 609);
+            Controls.Add(listBoxCalculos);
             Controls.Add(btnMostrarCalculos);
             Controls.Add(txtResultado);
             Controls.Add(btnRaizCuadrada);
@@ -358,5 +370,6 @@
         private Button btnRaizCuadrada;
         private TextBox txtResultado;
         private Button btnMostrarCalculos;
+        private ListBox listBoxCalculos;
     }
 }
