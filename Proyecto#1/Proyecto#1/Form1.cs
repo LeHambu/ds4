@@ -1,9 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Windows.Forms;
-using System.Data;
-using System.Data.SqlTypes;
-using System.Drawing.Printing;
 
 namespace Proyecto_1
 {
@@ -12,9 +9,6 @@ namespace Proyecto_1
     {
         double num1 = 0, num2 = 0;
         string operador = "";
-        string connectionString = "Server=localhost;Database=Proyecto1;Trusted_Connection=True;TrustServerCertificate=True;";
-        bool nuevaOperacion;
-        string textoImprimir = "";
 
         public Form1()
         {
@@ -39,8 +33,9 @@ namespace Proyecto_1
 
         private void btnIgual_Click_1(object sender, EventArgs e)
         {
-            double resultado = 0;
-            num2 = Convert.ToDouble(txtResultado.Text);
+            num2 = Convert.ToDouble(txtResultado.Text);  // Captura el segundo número
+
+            // Realiza la operación correspondiente
             switch (operador)
             {
                 case "+":
@@ -61,14 +56,12 @@ namespace Proyecto_1
                         return;
                     }
                     break;
-                case "^":
-                    resultado = Math.Pow(num1, num2);
+                case "^":  // Potencia (exponente)
+                    double resultado = Math.Pow(num1, num2);
+                    txtResultado.Text = resultado.ToString();
                     break;
+
             }
-
-            txtResultado.Text = resultado.ToString();
-
-            GuardarCalculo(operador, resultado);
         }
 
 
@@ -96,6 +89,7 @@ namespace Proyecto_1
             Button boton = (Button)sender;
             txtResultado.Text += boton.Text;
         }
+
 
         private void btn5_Click(object sender, EventArgs e)
         {
@@ -202,6 +196,7 @@ namespace Proyecto_1
             num2 = 0;
             operador = "";
         }
+<<<<<<< HEAD
 
         private void GuardarCalculo(string operador, double resultado)
         {
@@ -265,5 +260,10 @@ namespace Proyecto_1
                 MessageBox.Show($"Ocurrió un error: {ex.Message}");
             }
         }
+=======
+>>>>>>> 6b308cb9a812140ba34859232769643be9641b49
     }
+
+
 }
+
