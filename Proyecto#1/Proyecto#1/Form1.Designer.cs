@@ -51,14 +51,16 @@
             btnRaizCuadrada = new Button();
             txtResultado = new TextBox();
             btnMostrarCalculos = new Button();
+            printDocument1 = new System.Drawing.Printing.PrintDocument();
             SuspendLayout();
             // 
             // btnClearEntry
             // 
             btnClearEntry.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnClearEntry.Location = new Point(153, 96);
+            btnClearEntry.Location = new Point(175, 128);
+            btnClearEntry.Margin = new Padding(3, 4, 3, 4);
             btnClearEntry.Name = "btnClearEntry";
-            btnClearEntry.Size = new Size(75, 67);
+            btnClearEntry.Size = new Size(86, 89);
             btnClearEntry.TabIndex = 0;
             btnClearEntry.Text = "CE";
             btnClearEntry.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // btnLimpiar
             // 
             btnLimpiar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLimpiar.Location = new Point(264, 96);
+            btnLimpiar.Location = new Point(302, 128);
+            btnLimpiar.Margin = new Padding(3, 4, 3, 4);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(75, 67);
+            btnLimpiar.Size = new Size(86, 89);
             btnLimpiar.TabIndex = 1;
             btnLimpiar.Text = "C";
             btnLimpiar.UseVisualStyleBackColor = true;
@@ -77,9 +80,10 @@
             // btnDot
             // 
             btnDot.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDot.Location = new Point(264, 519);
+            btnDot.Location = new Point(302, 692);
+            btnDot.Margin = new Padding(3, 4, 3, 4);
             btnDot.Name = "btnDot";
-            btnDot.Size = new Size(75, 67);
+            btnDot.Size = new Size(86, 89);
             btnDot.TabIndex = 2;
             btnDot.Text = ".";
             btnDot.UseVisualStyleBackColor = true;
@@ -87,9 +91,10 @@
             // btnIgual
             // 
             btnIgual.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnIgual.Location = new Point(371, 519);
+            btnIgual.Location = new Point(424, 692);
+            btnIgual.Margin = new Padding(3, 4, 3, 4);
             btnIgual.Name = "btnIgual";
-            btnIgual.Size = new Size(75, 67);
+            btnIgual.Size = new Size(86, 89);
             btnIgual.TabIndex = 3;
             btnIgual.Text = "=";
             btnIgual.UseVisualStyleBackColor = true;
@@ -98,9 +103,10 @@
             // btnSuma
             // 
             btnSuma.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSuma.Location = new Point(371, 435);
+            btnSuma.Location = new Point(424, 580);
+            btnSuma.Margin = new Padding(3, 4, 3, 4);
             btnSuma.Name = "btnSuma";
-            btnSuma.Size = new Size(75, 67);
+            btnSuma.Size = new Size(86, 89);
             btnSuma.TabIndex = 4;
             btnSuma.Text = "+";
             btnSuma.UseVisualStyleBackColor = true;
@@ -109,9 +115,10 @@
             // btnResta
             // 
             btnResta.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnResta.Location = new Point(371, 349);
+            btnResta.Location = new Point(424, 465);
+            btnResta.Margin = new Padding(3, 4, 3, 4);
             btnResta.Name = "btnResta";
-            btnResta.Size = new Size(75, 67);
+            btnResta.Size = new Size(86, 89);
             btnResta.TabIndex = 5;
             btnResta.Text = "-";
             btnResta.UseVisualStyleBackColor = true;
@@ -120,9 +127,10 @@
             // btnMultiplicacion
             // 
             btnMultiplicacion.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMultiplicacion.Location = new Point(371, 266);
+            btnMultiplicacion.Location = new Point(424, 355);
+            btnMultiplicacion.Margin = new Padding(3, 4, 3, 4);
             btnMultiplicacion.Name = "btnMultiplicacion";
-            btnMultiplicacion.Size = new Size(75, 67);
+            btnMultiplicacion.Size = new Size(86, 89);
             btnMultiplicacion.TabIndex = 6;
             btnMultiplicacion.Text = "*";
             btnMultiplicacion.UseVisualStyleBackColor = true;
@@ -131,9 +139,10 @@
             // btnBorrar
             // 
             btnBorrar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBorrar.Location = new Point(371, 96);
+            btnBorrar.Location = new Point(424, 128);
+            btnBorrar.Margin = new Padding(3, 4, 3, 4);
             btnBorrar.Name = "btnBorrar";
-            btnBorrar.Size = new Size(75, 67);
+            btnBorrar.Size = new Size(86, 89);
             btnBorrar.TabIndex = 7;
             btnBorrar.Text = "Del";
             btnBorrar.UseVisualStyleBackColor = true;
@@ -141,9 +150,10 @@
             // btnDivision
             // 
             btnDivision.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDivision.Location = new Point(371, 183);
+            btnDivision.Location = new Point(424, 244);
+            btnDivision.Margin = new Padding(3, 4, 3, 4);
             btnDivision.Name = "btnDivision";
-            btnDivision.Size = new Size(75, 67);
+            btnDivision.Size = new Size(86, 89);
             btnDivision.TabIndex = 8;
             btnDivision.Text = "/";
             btnDivision.UseVisualStyleBackColor = true;
@@ -152,9 +162,10 @@
             // btn0
             // 
             btn0.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn0.Location = new Point(153, 519);
+            btn0.Location = new Point(175, 692);
+            btn0.Margin = new Padding(3, 4, 3, 4);
             btn0.Name = "btn0";
-            btn0.Size = new Size(75, 67);
+            btn0.Size = new Size(86, 89);
             btn0.TabIndex = 9;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = true;
@@ -163,9 +174,10 @@
             // btn3
             // 
             btn3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn3.Location = new Point(264, 435);
+            btn3.Location = new Point(302, 580);
+            btn3.Margin = new Padding(3, 4, 3, 4);
             btn3.Name = "btn3";
-            btn3.Size = new Size(75, 67);
+            btn3.Size = new Size(86, 89);
             btn3.TabIndex = 10;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = true;
@@ -174,9 +186,10 @@
             // btn2
             // 
             btn2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn2.Location = new Point(153, 435);
+            btn2.Location = new Point(175, 580);
+            btn2.Margin = new Padding(3, 4, 3, 4);
             btn2.Name = "btn2";
-            btn2.Size = new Size(75, 67);
+            btn2.Size = new Size(86, 89);
             btn2.TabIndex = 11;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = true;
@@ -185,9 +198,10 @@
             // btn1
             // 
             btn1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn1.Location = new Point(42, 435);
+            btn1.Location = new Point(48, 580);
+            btn1.Margin = new Padding(3, 4, 3, 4);
             btn1.Name = "btn1";
-            btn1.Size = new Size(75, 67);
+            btn1.Size = new Size(86, 89);
             btn1.TabIndex = 12;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = true;
@@ -196,9 +210,10 @@
             // btn6
             // 
             btn6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn6.Location = new Point(264, 349);
+            btn6.Location = new Point(302, 465);
+            btn6.Margin = new Padding(3, 4, 3, 4);
             btn6.Name = "btn6";
-            btn6.Size = new Size(75, 67);
+            btn6.Size = new Size(86, 89);
             btn6.TabIndex = 13;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = true;
@@ -207,9 +222,10 @@
             // btn4
             // 
             btn4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn4.Location = new Point(42, 349);
+            btn4.Location = new Point(48, 465);
+            btn4.Margin = new Padding(3, 4, 3, 4);
             btn4.Name = "btn4";
-            btn4.Size = new Size(75, 67);
+            btn4.Size = new Size(86, 89);
             btn4.TabIndex = 14;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = true;
@@ -218,9 +234,10 @@
             // btn7
             // 
             btn7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn7.Location = new Point(42, 266);
+            btn7.Location = new Point(48, 355);
+            btn7.Margin = new Padding(3, 4, 3, 4);
             btn7.Name = "btn7";
-            btn7.Size = new Size(75, 67);
+            btn7.Size = new Size(86, 89);
             btn7.TabIndex = 15;
             btn7.Text = "7";
             btn7.UseVisualStyleBackColor = true;
@@ -229,9 +246,10 @@
             // btn8
             // 
             btn8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn8.Location = new Point(153, 266);
+            btn8.Location = new Point(175, 355);
+            btn8.Margin = new Padding(3, 4, 3, 4);
             btn8.Name = "btn8";
-            btn8.Size = new Size(75, 67);
+            btn8.Size = new Size(86, 89);
             btn8.TabIndex = 16;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = true;
@@ -240,9 +258,10 @@
             // btn5
             // 
             btn5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn5.Location = new Point(153, 349);
+            btn5.Location = new Point(175, 465);
+            btn5.Margin = new Padding(3, 4, 3, 4);
             btn5.Name = "btn5";
-            btn5.Size = new Size(75, 67);
+            btn5.Size = new Size(86, 89);
             btn5.TabIndex = 17;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = true;
@@ -251,9 +270,10 @@
             // btnExponente
             // 
             btnExponente.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnExponente.Location = new Point(153, 183);
+            btnExponente.Location = new Point(175, 244);
+            btnExponente.Margin = new Padding(3, 4, 3, 4);
             btnExponente.Name = "btnExponente";
-            btnExponente.Size = new Size(75, 67);
+            btnExponente.Size = new Size(86, 89);
             btnExponente.TabIndex = 18;
             btnExponente.Text = "^";
             btnExponente.UseVisualStyleBackColor = true;
@@ -262,9 +282,10 @@
             // btn9
             // 
             btn9.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn9.Location = new Point(264, 266);
+            btn9.Location = new Point(302, 355);
+            btn9.Margin = new Padding(3, 4, 3, 4);
             btn9.Name = "btn9";
-            btn9.Size = new Size(75, 67);
+            btn9.Size = new Size(86, 89);
             btn9.TabIndex = 19;
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = true;
@@ -273,9 +294,10 @@
             // btnRaizCuadrada
             // 
             btnRaizCuadrada.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRaizCuadrada.Location = new Point(264, 183);
+            btnRaizCuadrada.Location = new Point(302, 244);
+            btnRaizCuadrada.Margin = new Padding(3, 4, 3, 4);
             btnRaizCuadrada.Name = "btnRaizCuadrada";
-            btnRaizCuadrada.Size = new Size(75, 67);
+            btnRaizCuadrada.Size = new Size(86, 89);
             btnRaizCuadrada.TabIndex = 20;
             btnRaizCuadrada.Text = "√ ";
             btnRaizCuadrada.UseVisualStyleBackColor = true;
@@ -284,26 +306,29 @@
             // txtResultado
             // 
             txtResultado.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtResultado.Location = new Point(36, 11);
+            txtResultado.Location = new Point(41, 15);
+            txtResultado.Margin = new Padding(3, 4, 3, 4);
             txtResultado.Name = "txtResultado";
-            txtResultado.Size = new Size(430, 54);
+            txtResultado.Size = new Size(491, 66);
             txtResultado.TabIndex = 21;
             // 
             // btnMostrarCalculos
             // 
             btnMostrarCalculos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMostrarCalculos.Location = new Point(42, 96);
+            btnMostrarCalculos.Location = new Point(48, 128);
+            btnMostrarCalculos.Margin = new Padding(3, 4, 3, 4);
             btnMostrarCalculos.Name = "btnMostrarCalculos";
-            btnMostrarCalculos.Size = new Size(92, 154);
+            btnMostrarCalculos.Size = new Size(105, 205);
             btnMostrarCalculos.TabIndex = 22;
             btnMostrarCalculos.Text = "Mostrar Calculos";
             btnMostrarCalculos.UseVisualStyleBackColor = true;
+            btnMostrarCalculos.Click += btnMostrarCalculos_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(499, 609);
+            ClientSize = new Size(570, 812);
             Controls.Add(btnMostrarCalculos);
             Controls.Add(txtResultado);
             Controls.Add(btnRaizCuadrada);
@@ -327,6 +352,7 @@
             Controls.Add(btnDot);
             Controls.Add(btnLimpiar);
             Controls.Add(btnClearEntry);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Calculadora";
             ResumeLayout(false);
@@ -358,5 +384,6 @@
         private Button btnRaizCuadrada;
         private TextBox txtResultado;
         private Button btnMostrarCalculos;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
