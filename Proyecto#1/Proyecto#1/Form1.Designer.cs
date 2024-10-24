@@ -63,6 +63,7 @@
             btnClearEntry.TabIndex = 0;
             btnClearEntry.Text = "CE";
             btnClearEntry.UseVisualStyleBackColor = true;
+            btnClearEntry.Click += btnClearEntry_Click;
             // 
             // btnLimpiar
             // 
@@ -84,6 +85,7 @@
             btnDot.TabIndex = 2;
             btnDot.Text = ".";
             btnDot.UseVisualStyleBackColor = true;
+            btnDot.Click += btnDot_Click;
             // 
             // btnIgual
             // 
@@ -136,8 +138,9 @@
             btnBorrar.Name = "btnBorrar";
             btnBorrar.Size = new Size(75, 67);
             btnBorrar.TabIndex = 7;
-            btnBorrar.Text = "Del";
+            btnBorrar.Text = "(-)";
             btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
             // 
             // btnDivision
             // 

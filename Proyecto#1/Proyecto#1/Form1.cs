@@ -264,5 +264,28 @@ namespace Proyecto_1
                 MessageBox.Show($"Ocurrió un error: {ex.Message}");
             }
         }
+
+        private void btnClearEntry_Click(object sender, EventArgs e)
+        {
+            txtResultado.Clear();
+        }
+
+        private void btnDot_Click(object sender, EventArgs e)
+        {
+            if (!txtResultado.Text.Contains("."))
+            {
+                txtResultado.Text += ".";
+            }
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtResultado.Text))
+            {
+                double num = Convert.ToDouble(txtResultado.Text);
+                num = -num;
+                txtResultado.Text = num.ToString();
+            }
+        }
     }
 }
