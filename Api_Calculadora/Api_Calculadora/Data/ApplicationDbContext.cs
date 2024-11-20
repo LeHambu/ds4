@@ -5,11 +5,14 @@ using System.Web;
 using System.Data.Entity;
 using Api_Calculadora.Models;
 
-public class ApplicationDbContext : DbContext
+namespace Api_Calculadora.Data
 {
-    public ApplicationDbContext() : base("DefaultConnection")
+    public class ApplicationDbContext : DbContext
     {
-    }
+        public ApplicationDbContext() : base("DefaultConnection")
+        {
+        }
 
-    public DbSet<Calculo> Calculos { get; set; }
+        public DbSet<Calculo> Calculos { get; set; }
+    }
 }

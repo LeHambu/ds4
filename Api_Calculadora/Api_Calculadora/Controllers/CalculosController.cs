@@ -22,7 +22,7 @@ namespace Api_Calculadora.Controllers
         [Route("api/Calculos/Sumas")]
         public async Task<IHttpActionResult> GetSumas()
         {
-            var sumas = await db.Calculos.Where(c => c.Operacion == "Suma").ToListAsync();
+            var sumas = await db.Calculos.Where(c => c.Operador == "+").ToListAsync();
             return Ok(sumas);
         }
 
@@ -30,7 +30,7 @@ namespace Api_Calculadora.Controllers
         [Route("api/Calculos/Restas")]
         public async Task<IHttpActionResult> GetRestas()
         {
-            var restas = await db.Calculos.Where(c => c.Operacion == "Resta").ToListAsync();
+            var restas = await db.Calculos.Where(c => c.Operador == "-").ToListAsync();
             return Ok(restas);
         }
 
@@ -38,7 +38,7 @@ namespace Api_Calculadora.Controllers
         [Route("api/Calculos/Multiplicaciones")]
         public async Task<IHttpActionResult> GetMultiplicaciones()
         {
-            var multiplicaciones = await db.Calculos.Where(c => c.Operacion == "Multiplicacion").ToListAsync();
+            var multiplicaciones = await db.Calculos.Where(c => c.Operador == "*").ToListAsync();
             return Ok(multiplicaciones);
         }
 
@@ -46,7 +46,7 @@ namespace Api_Calculadora.Controllers
         [Route("api/Calculos/Divisiones")]
         public async Task<IHttpActionResult> GetDivisiones()
         {
-            var divisiones = await db.Calculos.Where(c => c.Operacion == "Division").ToListAsync();
+            var divisiones = await db.Calculos.Where(c => c.Operador == "/").ToListAsync();
             return Ok(divisiones);
         }
 
@@ -54,7 +54,7 @@ namespace Api_Calculadora.Controllers
         [Route("api/Calculos/UltimosDiez")]
         public async Task<IHttpActionResult> GetUltimosDiez()
         {
-            var ultimosDiez = await db.Calculos.OrderByDescending(c => c.FechaCalculo).Take(10).ToListAsync();
+            var ultimosDiez = await db.Calculos.OrderByDescending(c => c.Id).Take(10).ToListAsync();
             return Ok(ultimosDiez);
         }
 
