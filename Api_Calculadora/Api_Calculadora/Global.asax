@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Api_Calculadora.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Api_Calculadora.WebApiApplication" Language="C#" %>
